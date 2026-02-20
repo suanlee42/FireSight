@@ -1,80 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FireSight Rescue Interface</title>
+.health_card{
+    text-align: center;
+    background-color: white;
+    color:black;
+    margin-bottom: 15px;
+    flex: 1;
+}
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="health_stats.css">
+.health_card p1{
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+.health_card .card{
+    background-color: rgb(181, 180, 180);
+    padding:3px;
+}
 
-</head>
-<body>
-    <div id="header">
-        <div class="header_item">
-            <img src="assets\cityu patent comp logo_orange.png" height=40></div>
-        <div class="header_item">
-            <h1>FireSight Rescue Interface</h1>
-        </div>
-    </div>
-    <nav>
-        <a href="index.html" class="nav_button"> OVERVIEW </a>
-        <a href="health_stats.html" class="nav_button selected"> HEALTH STATS </a>
-        <a href="#" class="nav_button"> DEPTH CAMERA </a>
-        <a href="#" class="nav_button"> LIDAR & SLAM MAP </a>
-    </nav>
-    <div class="tab">
-        <div class="heading">
-            <h2>HEALTH MONITORING</h2>
-            <i class="fa-solid fa-heart-pulse"></i>
-        </div>
-        <div class="row">
-            <div class="health_card">
-                <p1>156 BPM</p1>
-                <div class="card">
-                    <p>Heart Rate Monitoring (HRM)</p>
-                    <p>RHR - 83 BPM</p>
-                    <!--smth dynamic that shows the status?-->
-                </div>
-            </div>
-            <div class="column">
-                <div class="health_chart" id="heartbeat"></div>
-                <p>HRM</p>
-            </div>
-        </div>
-        <br>
+.health_card .card p{
+    line-height: 10px;
+    margin: 10px;
+}
 
-        <div class="row">
-            <div class="health_card">
-                <p1>100 ms</p1>
-                <div class="card">
-                    <p>Heart Rate Variability (HRV)</p>
-                    <!--smth dynamic that shows the status?-->
-                </div>
-            </div>
-        </div>
-        <br>
+.card{
+    background-color: white;
+}
 
-        <div class="row">
-            <div class="health_card">
-                <p1>156 BPM</p1>
-                <div class="card">
-                    <p>Blood Oxygen Saturation (SpO2)</p>
-                    <p>Ideal Range - 95-100%</p>
-                    <!--smth dynamic that shows the status?-->
-                </div>
-            </div>
-        </div>
-        <br>
+.row{
+    display: flex;
+    gap:20px;
+}
 
-
-
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+.health_chart #heartbeat{
+    flex:4;
+    height: 400px;
+    background-color: white;
+    width: 400px;
+}
