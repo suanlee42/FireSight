@@ -1,11 +1,11 @@
-#dcam_displays{
+.dcam_displays{
     display: flex;
     /*gap: 20px;*/
     justify-content: space-between;
     text-align: center;
 }
 
-#dcm_display .card{
+.dcm_displays .card{
     display:block;
     background-color: rgb(181, 180, 180);
 }
@@ -16,7 +16,7 @@
     background-color: white;
 }
 
-#dcm_display .card p{
+.dcm_displays .card p{
     color: black;
     text-align: center;
     font-size: 24px;
