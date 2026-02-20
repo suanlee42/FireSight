@@ -1,0 +1,51 @@
+#dcam_displays{
+    display: flex;
+    /*gap: 20px;*/
+    justify-content: space-between;
+    text-align: center;
+}
+
+#dcm_display .card{
+    display:block;
+    background-color: rgb(181, 180, 180);
+}
+
+.dcam{
+    width: 290px;
+    height: 250px;
+    background-color: white;
+}
+
+#dcm_display .card p{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+
+.map{
+    width: 905px;
+    height:400px;
+    background-color: white;
+}
+
+.health_card{
+    text-align: center;
+    background-color: white;
+    color:black;
+    margin-bottom: 15px;
+}
+
+.health_card p1{
+    display: block;
+    font-size: 24px;
+    padding: 10px 10px;
+}
+
+.health_card .card{
+    background-color: rgb(181, 180, 180);
+    padding:3px;
+}
+
+.health_card .card p{
+    line-height: 5px;
+}
