@@ -1,0 +1,22 @@
+.thermal_cam{
+    min-height: 550px;
+    min-width: 800px;
+    background-color: white;
+    justify-content: left;
+    flex: 3;
+
+}
+
+.status_alert{
+    min-width: 290px;
+    min-height: 250px;
+    justify-content: right;
+    background-color: white;
+    flex: 1;
+}
+
+.card p{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
