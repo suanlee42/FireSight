@@ -49,8 +49,8 @@ nav{
     border-radius:10px;
     margin-top: 5px;
     margin-bottom:5px;
-    padding:0px 15px 0px 15px;
-    
+    padding:0px 15px 15px 15px;
+    overflow:visible;
 }
 
 .heading{
@@ -75,7 +75,8 @@ nav{
 }
 
 .row{
-    display:inline-flex;
+    display:flex;
+    gap:20px;
 }
 
 
