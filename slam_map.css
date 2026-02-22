@@ -1,0 +1,17 @@
+.control_button{
+    padding: 0px 20px;
+    background-color: rgb(255, 179, 143);
+    border-radius: 30px;
+    color: black;
+    border: 5px solid rgb(243, 103, 37);
+    width: fit-content;
+}
+
+
+
+.map{
+    min-height: 600px;
+    flex:1;
+    background-color: white;
+    min-width: fit-content;
+}

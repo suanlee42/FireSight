@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireSight Rescue Interface</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slam_map.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header_item">
+            <img src="assets\cityu patent comp logo_orange.png" height=40></div>
+        <div class="header_item">
+            <h1>FireSight Rescue Interface</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html" class="nav_button"> OVERVIEW </a>
+        <a href="health_stats.html" class="nav_button"> HEALTH STATS </a>
+        <a href="thermal.html" class="nav_button">THERMAL IMAGING</a>
+        <a href="slam_map.html" class="nav_button selected"> LIDAR & SLAM MAP </a>
+    </nav>
+    <div class="tab">
+        <div class="heading">
+            <h2>LIDAR & SLAM MAPPING</h2>
+            <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div row>
+            <div class="control_button" id="interact">
+                <p>Interact</p>
+            </div>
+            <div class="control_button" id="move_camera">
+                <p>Move Camera</p>
+            </div>
+             <div class="control_button" id="select">
+                <p>Select</p>
+            </div>
+            <div class="control_button" id="measure">
+                <p>Measure</p>
+            </div>
+            <div class="control_button" id="plus">
+                <i class="fa-solid fa-plus">
+            </div>
+            <div class="control_button" id="minus">
+                <i class="fa-solid fa-minus">
+            </div>
+            <div class="control_button" id="focus_camera">
+                <p>Focus Camera</p>
+            </div>
+            <div class="control_button" id="2d_point_estimate">
+                <p>2D Point Estimate</p>
+            </div>
+            <div class="control_button" id="2d_goal_pose">
+                <p>2D Goal Pose</p>
+            </div>
+            <div class="control_button" id="publish_point">
+                <p>Publish Point</p>
+            </div>
+
+        </div>
+        <div class="map"></div>
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
