@@ -47,5 +47,6 @@
 }
 
 .health_card .card p{
-    line-height: 5px;
+    overflow-wrap:break-word;
+    margin: 5px auto 5px auto;
 }
