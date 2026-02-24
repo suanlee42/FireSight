@@ -31,11 +31,16 @@
         <div class="heading">
             <h2>CONTROL PANEL</h2>
             <i class="fa-solid fa-gear"></i>
-            <button type="button">
-                <i class="fa-solid fa-caret-left"></i>
+            <button type="button" class="toggle_button" onclick="toggleElement()">
+                <i class="fa-solid fa-caret-left" id="toggle_icon"></i>
             </button>
         </div>
-        <!--add control panel stuff-->
+        <div id="control_panel">
+            <button type="button" class="control_button" id="connect_cam">Connect Camera</button>
+            <button type="button" class="control_button" id="disconnect_cam">Disconnect Camera</button>
+            <button type="button" class="control_button" id="save_ss">Save Screenshot</button>
+            <button type="button" class="control_button" id="connect">Clear Display</button>
+        </div>
 
         <div class="heading">
             <h2>FOUR-VIEW DEPTH CAMERA DISPLAY</h2>
@@ -44,7 +49,7 @@
         <div class="dcam_displays">
             <div class="card">
                 <div class="dcam"></div>
-                <p>RBG</p>
+                <p>RGB</p>
             </div>
             <div class="card">
                 <div class="dcam"></div>
@@ -61,7 +66,7 @@
         </div>
 
         <div class="row">
-            <div class="column">
+            <div class="column" id="slam_map">
                 <div class="heading">
                     <h2>LIDAR & SLAM MAPPING</h2>
                     <i class="fa-solid fa-layer-group"></i>
